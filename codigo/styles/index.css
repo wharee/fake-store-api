@@ -1,3 +1,28 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .login-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .login {
+    font-size: 12pt;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 767px) {
+    .login-area {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
 .carousel-inner {
     height: 40em;
     border-bottom: 1px solid black;
