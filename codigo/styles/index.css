@@ -1,0 +1,166 @@
+.carousel-inner {
+    height: 40em;
+    border-bottom: 1px solid black;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+  
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+.card-title {
+    margin-bottom: 10px; 
+}
+
+.card-description {
+    flex-grow: 1; 
+    margin: 0; 
+}
+  
+  
+.card-text {
+    max-height: 100px;
+    overflow: auto; 
+}
+
+.card-price {
+    margin-top: auto;
+}
+
+.price-button,
+.card-price {
+    display: inline-block;
+}
+  
+.price-button {
+    padding: 6px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #000000;
+    padding: 50px 0;
+    margin-top: 450px;
+}
+.container-footer{
+    width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #415aca;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #ffffff;
+}
+.footer-col .form-sub input::placeholder{
+    color: rgb(158, 158, 158);
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+
+
+  
