@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Wix+Madefor+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:ital,wght@0,400;1,300&family=Noto+Sans:ital,wght@1,600&family=Wix+Madefor+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:ital,wght@0,400;1,300&family=Noto+Sans:ital,wght@1,600&family=Nunito&family=Wix+Madefor+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700&family=Montserrat:ital,wght@0,400;1,300&family=Wix+Madefor+Display:wght@400;500&display=swap');
 .navbar {
     display: flex;
     align-items: center;
@@ -8,12 +12,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    
   }
   
   .login {
     font-size: 12pt;
     margin: 0;
     text-decoration: none;
+    cursor: pointer;
   }
   
   @media (max-width: 767px) {
@@ -66,22 +72,44 @@ div.card {
 
 .card-description {
     flex-grow: 1; 
-    margin: 0; 
+    margin: 0;
+    
 }
-  
+
+.card-category {
+    font-family: 'Nunito', sans-serif;
+}
   
 .card-text {
     max-height: 100px;
     overflow: auto; 
+    font-family: 'Nunito', sans-serif;
 }
 
 .card-price {
     margin-top: auto;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .price-button,
 .card-price {
     display: inline-block;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-details a{
+    text-decoration: none;
+    color: #000000 !important;
+    cursor: pointer;
+    transition: text-decoration 0.3s ease;
+    font-family:  'Montserrat', sans-serif;
+}
+
+.card-details a:hover {
+    text-decoration: underline;
 }
   
 .price-button {
@@ -89,6 +117,7 @@ div.card {
     background-color: transparent;
     border: 1px solid black;
     border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
 }
 
 footer{

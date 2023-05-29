@@ -9,10 +9,10 @@ fetch('https://fakestoreapi.com/products')
                     <img src="${values.image}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="title">${values.title}</p>
-                            <p class="card-text">${values.description}</p>
-                            <p class="card-category">Category:${values.category}</p>
-                            <p class="card-price">${values.price}</p>
-                            <p class="card-details"><a href="codigo/detalhes.html">See details</a></p>
+                            
+                            
+                            <p class="card-price">$${values.price}</p>
+                            <p class="card-details"><a href="detalhes.html?id=${values.id}">See details</a></p>
                             <button class="price-button" type="submit">Add to cart</button>
                         </div>
                 </div>`;
@@ -42,8 +42,8 @@ fetch('https://fakestoreapi.com/products')
                             <p class="title">${values.title}</p>
                             <p class="card-text">${values.description}</p>
                             <p class="card-category">Category:${values.category}</p>
-                            <p class="card-price">${values.price}</p>
-                            <p class="card-details"><a href="codigo/detalhes.html">See details</a></p>
+                            <p class="card-price">$${values.price}</p>
+                            <p class="card-details"><a href="detalhes.html?id=${values.id}">See details</a></p>
                             <button class="price-button" type="submit">Add to cart</button>
                         </div>
                 </div>`;
