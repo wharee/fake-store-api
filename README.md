@@ -1,7 +1,9 @@
 # fake-store-api
 
-## na pagina de detalhe tem q mudar o banner n esquece, e ver se na de pesquisa ta com o msm erro ou n
+## A FAZERES
 
-## media query 
+# na pagina de detalhe tem q mudar o banner n esquece, e ver se na de pesquisa ta com o msm erro ou n
 
-## ver se tem como deixar o detalhes mais bonitinho
+# media query 
+
+# ver se tem como deixar o detalhes mais bonitinho
