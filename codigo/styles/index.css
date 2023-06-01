@@ -22,12 +22,6 @@
     cursor: pointer;
   }
   
-  @media (max-width: 767px) {
-    .login-area {
-      flex-direction: column;
-      gap: 5px;
-    }
-  }
   
 .carousel-inner {
     height: 40em;
@@ -123,7 +117,7 @@ div.card {
 footer{
     background-color: #000000;
     padding: 50px 0;
-    margin-top: 450px;
+    margin-top: 20px;
 }
 .container-footer{
     width: 1400px;
@@ -217,4 +211,28 @@ footer{
 }
 
 
-  
+@media (max-width: 767px) {
+    .carousel-inner{
+        height: 200px;
+    }
+    .footer-col {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    .container-footer {
+      width: 300px;
+    }
+    
+}
+
+@media (max-width: 1440px) {
+    .container-footer {
+        width: 1100px;
+    }
+    .footer-col {
+        margin: 10px;
+    }
+
+}
+
+
