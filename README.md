@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Projeto FakeStore - DIW - Sistemas de Informação 
 Este é um projeto XYZ, uma aplicação web de e-commerce que utiliza a Fake Store API como fonte de dados para exibir produtos, categorias, usuários e processamento de pedidos.
 
@@ -6,7 +7,6 @@ O projeto XYZ é uma plataforma de comércio eletrônico que permite aos usuári
 
 ### Funcionalidades
 O projeto XYZ oferece as seguintes funcionalidades principais:
-
 ***Listagem de Produtos: Os usuários podem visualizar uma ampla variedade de produtos disponíveis para compra, incluindo informações como título, descrição, preço e imagem. Esses dados são obtidos da Fake Store API.
 
 ***Categorização de Produtos: Os produtos são organizados em diferentes categorias, permitindo aos usuários filtrar e visualizar produtos específicos de acordo com suas preferências.
@@ -36,3 +36,14 @@ Git: um sistema de controle de versão para gerenciar o código-fonte do projeto
 ![alt text](https://i.imgur.com/W1Gmn1C.jpg)
  
 </div>
+=======
+# fake-store-api
+
+## A FAZERES
+
+# na pagina de detalhe tem q mudar o banner n esquece, e ver se na de pesquisa ta com o msm erro ou n
+
+# media query 
+
+# ver se tem como deixar o detalhes mais bonitinho
+>>>>>>> d5022cc8a67f1184a27e0d246e623eedf883801c
