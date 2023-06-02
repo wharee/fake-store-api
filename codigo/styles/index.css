@@ -181,7 +181,7 @@ footer{
 }
 
 .footer-col .medias-socias a:hover{
-    color: #415aca;
+    color: black;
     background-color: white;
 }
 .footer-col .form-sub input{
@@ -221,6 +221,9 @@ footer{
     }
     .container-footer {
       width: 300px;
+    }
+    .form-sub {
+        width: 300px;
     }
     
 }
