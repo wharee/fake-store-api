@@ -1,5 +1,5 @@
 function detailId(id) {
-    fetch('https://fakestoreapi.com/products/' + id)
+    fetch('https://diwserver.vps.webdock.cloud/products/' + id)
       .then((data) => {
         return data.json();
       })

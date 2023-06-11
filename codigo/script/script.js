@@ -1,21 +1,26 @@
-fetch('https://fakestoreapi.com/products')
-  .then((data) => {
-    return data.json();
+fetch('https://diwserver.vps.webdock.cloud/products')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Error retrieving products');
+    }
+    return response.json();
   })
-  .then((completedata) => {
-    let allData = completedata; // Armazena todos os dados iniciais
+  .then(data => {
+    // Verificar os dados no console
+    console.log(data);
 
+    const products = data.products; // Acessar o array de produtos
+
+    // Renderizar os produtos
     function renderData(data) {
       let dataHTML = "";
-      data.forEach((values) => {
+      data.forEach(product => {
         dataHTML += `<div class="card">
-          <img src="${values.image}" class="card-img-top" alt="...">
+          <img src="${product.image}" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="title">${values.title}</p>
-            
-        
-            <p class="card-price">$${values.price}</p>
-            <p class="card-details"><a href="detalhes.html?id=${values.id}">See details</a></p>
+            <p class="title">${product.title}</p>
+            <p class="card-price">$${product.price}</p>
+            <p class="card-details"><a href="detalhes.html?id=${product.id}">See details</a></p>
             <button class="price-button" type="submit">Add to cart</button>
           </div>
         </div>`;
@@ -24,12 +29,12 @@ fetch('https://fakestoreapi.com/products')
       document.getElementById('cardContainer').innerHTML = dataHTML;
     }
 
-    renderData(allData); // Renderiza todos os produtos inicialmente
+    renderData(products); // Renderizar os produtos
 
     const searchInput = document.querySelector('input[type="search"]');
     searchInput.addEventListener('input', () => {
       const searchTerm = searchInput.value.toLowerCase();
-      const filteredData = allData.filter((product) =>
+      const filteredData = products.filter((product) =>
         product.title.toLowerCase().includes(searchTerm) ||
         product.category.toLowerCase().includes(searchTerm)
       );
@@ -37,7 +42,7 @@ fetch('https://fakestoreapi.com/products')
       renderData(filteredData); // Renderiza os produtos filtrados por nome e categoria
     });
   })
-  .catch((err) => {
-    console.log(err);
-    alert("Error to find your product, please reload the page");
+  .catch(error => {
+    console.log(error);
+    alert('Error retrieving products, please reload the page');
   });
